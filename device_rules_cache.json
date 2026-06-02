@@ -1,0 +1,232 @@
+{
+  "arjo inc.|flowtron": {
+    "device_type": "Sequential Compression Device",
+    "rule_type": "prefix_year",
+    "prefix": "21",
+    "year": 2021
+  },
+  "american diagnostic|ce 1434": {
+    "device_type": "Sphygmomanometer",
+    "rule_type": "adc_rule"
+  },
+  "baxter healthcare corp.|spectrum iq": {
+    "device_type": "Infusion Pump",
+    "rule_type": "baxter_rule"
+  },
+  "biosonic|uc95": {
+    "device_type": "Ultrasonic Cleaner",
+    "rule_type": "prefix_yymm"
+  },
+  "biosonic|uc95d15": {
+    "device_type": "Ultrasonic Cleaner",
+    "rule_type": "prefix_yymm"
+  },
+  "cogentix medical|cst-4000": {
+    "device_type": "Cystoscope",
+    "rule_type": "cogentix_rule"
+  },
+  "cogentix medical|cst-5000": {
+    "device_type": "Cystoscope",
+    "rule_type": "cogentix_rule"
+  },
+  "covidien|rapidvac": {
+    "device_type": "Surgical Smoke Evacuator",
+    "rule_type": "covidien_rule"
+  },
+  "edan instruments|elitev5": {
+    "device_type": "Patient Monitor",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|f9express": {
+    "device_type": "Fetal Monitor",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|im3": {
+    "device_type": "Vital Signs Monitor",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|im50": {
+    "device_type": "Patient Monitor",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|im70": {
+    "device_type": "Patient Monitor",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|se1200express": {
+    "device_type": "ECG Machine",
+    "rule_type": "edan_rule"
+  },
+  "edan instruments|it20": {
+    "device_type": "Patient Monitor",
+    "rule_type": "edan_rule"
+  },
+  "exergen|tat5000": {
+    "device_type": "Temporal Thermometer",
+    "rule_type": "exergen_rule"
+  },
+  "ge healthcare|apex pro ch": {
+    "device_type": "Telemetry Transmitter",
+    "rule_type": "ge_rule"
+  },
+  "ge healthcare|patient data module (pdm)": {
+    "device_type": "Patient Data Module",
+    "rule_type": "ge_rule"
+  },
+  "hill rom|centuryp1400": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hill rom|p1440": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hill rom|p3200": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hillrom|century": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hillrom|centuryp1400": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hillrom|p3200": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hillrom|pcenturyk3256": {
+    "device_type": "Hospital Bed",
+    "rule_type": "hillrom_rule"
+  },
+  "hospira|pluma+": {
+    "device_type": "Infusion Pump",
+    "rule_type": "prefix_year",
+    "prefix": "17",
+    "year": 2017
+  },
+  "jiangmen dacheng medical equipment co.|iob-507": {
+    "device_type": "Infant Incubator",
+    "rule_type": "yyyymmdd_search"
+  },
+  "lab corp.|642e": {
+    "device_type": "Centrifuge",
+    "rule_type": "yymmdd_start"
+  },
+  "linet|eleganza 3": {
+    "device_type": "Hospital Bed",
+    "rule_type": "yyyymm_start"
+  },
+  "linet|eleganza 4": {
+    "device_type": "Hospital Bed",
+    "rule_type": "yyyymm_start"
+  },
+  "masimo|rad8": {
+    "device_type": "Pulse Oximeter",
+    "rule_type": "prefix_year",
+    "prefix": "M19",
+    "year": 2019
+  },
+  "mindray|benevision n15": {
+    "device_type": "Patient Monitor",
+    "rule_type": "mindray_rule"
+  },
+  "mindray|epm12ma": {
+    "device_type": "Patient Monitor",
+    "rule_type": "mindray_rule"
+  },
+  "olympus|cv190": {
+    "device_type": "Endoscopy Video Processor",
+    "rule_type": "prefix_year",
+    "prefix": "75",
+    "year": 2015
+  },
+  "philips|mx500": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "philips|intellivue mp20": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "philips|intellivue mp30": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "philips|intellivue mp50": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "philips|intellivue mx40": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "philips|m3002a": {
+    "device_type": "Patient Monitor",
+    "rule_type": "philips_rule"
+  },
+  "stryker|1061": {
+    "device_type": "Stretcher",
+    "rule_type": "stryker_rule"
+  },
+  "stryker|1115": {
+    "device_type": "Stretcher",
+    "rule_type": "stryker_rule"
+  },
+  "thermo scientific|smartvue915": {
+    "device_type": "Temperature Monitor",
+    "rule_type": "prefix_year",
+    "prefix": "18",
+    "year": 2018
+  },
+  "unico|g380pl led": {
+    "device_type": "Microscope",
+    "rule_type": "yyyymmdd_search"
+  },
+  "welch allyn|filac3000": {
+    "device_type": "Thermometer",
+    "rule_type": "welch_allyn_rule"
+  },
+  "welch allyn|spot vital signs": {
+    "device_type": "Vital Signs Monitor",
+    "rule_type": "welch_allyn_rule"
+  },
+  "welch allyn|suretempplus": {
+    "device_type": "Thermometer",
+    "rule_type": "welch_allyn_rule"
+  },
+  "zoll medical|aedplus": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|m series": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|propaq md": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|r series": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|r series als": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|r series plus": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|rseries": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  },
+  "zoll medical|x series": {
+    "device_type": "Defibrillator",
+    "rule_type": "zoll_rule"
+  }
+}

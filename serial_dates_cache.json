@@ -1,0 +1,3202 @@
+{
+  "american diagnostic|ce 1434|c22192114": {
+    "date": "2022-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c22192189": {
+    "date": "2022-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241870143": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241870093": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241843867": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241843922": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241843881": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "american diagnostic|ce 1434|c241843806": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "biosonic|uc95|130402317": {
+    "date": "2013-04-01",
+    "confidence": 1.0
+  },
+  "biosonic|uc95d15|131100008": {
+    "date": "2013-11-01",
+    "confidence": 1.0
+  },
+  "biosonic|uc95d15|131100002": {
+    "date": "2013-11-01",
+    "confidence": 1.0
+  },
+  "cogentix medical|cst-4000|cs1704f": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "cogentix medical|cst-4000|cs1705f": {
+    "date": "2017-02-01",
+    "confidence": 1.0
+  },
+  "cogentix medical|cst-5000|cs0709n": {
+    "date": "2007-03-01",
+    "confidence": 1.0
+  },
+  "cogentix medical|cst-5000|cs0715n": {
+    "date": "2007-04-01",
+    "confidence": 1.0
+  },
+  "covidien|rapidvac|vl012301x": {
+    "date": "2023-01-01",
+    "confidence": 1.0
+  },
+  "covidien|rapidvac|vl012165x": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "covidien|rapidvac|vl012164x": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m560039-m11330014": {
+    "date": "2011-03-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m560039-m21c11330002": {
+    "date": "2021-12-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m560039-m23909480002": {
+    "date": "2023-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740024": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740020": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740011": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740025": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740005": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740015": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740016": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m1980570002": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740001": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740013": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|f9express|m19804740022": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|261436-m21508650086": {
+    "date": "2021-05-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|261436-m21508650088": {
+    "date": "2021-05-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|261436-m21508650067": {
+    "date": "2021-05-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|262654-m24705640065": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|262654-m24903790011": {
+    "date": "2024-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|262654-m24903790001": {
+    "date": "2024-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|262096-m20706520060": {
+    "date": "2020-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|261436-m20903720061": {
+    "date": "2020-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im3|261436-m20903720005": {
+    "date": "2020-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|m23116470007": {
+    "date": "2023-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m23116470013": {
+    "date": "2023-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m12900650018": {
+    "date": "2012-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m23801490029": {
+    "date": "2023-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m23801490022": {
+    "date": "2023-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m23801490034": {
+    "date": "2023-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m23801490035": {
+    "date": "2023-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m18706470008": {
+    "date": "2018-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-k24700210010": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|460016-m246096330015": {
+    "date": "2024-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|311094-m16611040004": {
+    "date": "2016-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|m14b08690005": {
+    "date": "2014-11-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|m24a2930014": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|m24a02930002": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|se1200express|m24a02930001": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320027": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19701080008": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m17902120005": {
+    "date": "2017-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m17902120008": {
+    "date": "2017-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19701080003": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m17902120007": {
+    "date": "2017-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19701080007": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19507110013": {
+    "date": "2019-05-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19507110011": {
+    "date": "2019-05-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19701080019": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320022": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19702060009": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320040": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320023": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320016": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320048": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320020": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320038": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320045": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320009": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|elitev5|m19805320026": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m14104900003": {
+    "date": "2014-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17602270005": {
+    "date": "2017-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17602270003": {
+    "date": "2017-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19110560012": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850023": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850015": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850029": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850033": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17101610022": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17101610039": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m16701760030": {
+    "date": "2016-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17101610030": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m16701760034": {
+    "date": "2016-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m16701760010": {
+    "date": "2016-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850017": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m17a03210041": {
+    "date": "2017-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100580024": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m18709800015": {
+    "date": "2018-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m19100850001": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m260066-m20320530023": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m260066-m20320530024": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m260066-m20320530007": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m260066-m20320530030": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m260066-m16901980001": {
+    "date": "2016-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m16603730016": {
+    "date": "2016-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780039": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780018": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530018": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530004": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530017": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530014": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530019": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530008": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780026": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530010": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780044": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530016": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780027": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530003": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530011": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530006": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530005": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530007": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780031": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530001": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780047": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m18414780019": {
+    "date": "2018-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530013": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m19805530002": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im70|m16600900014": {
+    "date": "2016-06-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m21203860030": {
+    "date": "2021-02-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413150003": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130058": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413150044": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m21203860028": {
+    "date": "2021-02-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24402010037": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24402010035": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24402010034": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380006": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380010": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380009": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380008": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380007": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380001": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380003": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380004": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m22411170006": {
+    "date": "2022-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m22411170008": {
+    "date": "2022-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413150007": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750012": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750016": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m2415750004": {
+    "date": "2024-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750002": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750003": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750001": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750018": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750019": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750011": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750010": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24a15750009": {
+    "date": "2024-10-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130016": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m2012320037": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130060": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130011": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130027": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130015": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m20403290003": {
+    "date": "2020-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19706920013": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130013": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m18909080003": {
+    "date": "2018-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m23910480001": {
+    "date": "2023-09-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m20403290001": {
+    "date": "2020-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380002": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m24408380005": {
+    "date": "2024-04-01",
+    "confidence": 1.0
+  },
+  "edan instruments|it20|m19413130052": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539272": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539493": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539059": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539490": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539270": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "exergen|tat5000|a1539277": {
+    "date": "2015-09-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|02r2981999": {
+    "date": "1999-02-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l9791999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l7601999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l2981999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l2591999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|12m1281998": {
+    "date": "1998-12-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|02r3141999": {
+    "date": "1999-02-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l7571999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|12m0591998": {
+    "date": "1998-12-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l7531999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|pcenturyk3256|12m0551998": {
+    "date": "1998-12-01",
+    "confidence": 1.0
+  },
+  "hillrom|pcenturyk3256|02r3391999": {
+    "date": "1999-02-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|02r3241999": {
+    "date": "1999-02-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|12m0561998": {
+    "date": "1998-12-01",
+    "confidence": 1.0
+  },
+  "hillrom|centuryp1400|10l7541999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|02r3631999": {
+    "date": "1999-02-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|12m1101998": {
+    "date": "1998-12-01",
+    "confidence": 1.0
+  },
+  "hillrom|century|10l9201999": {
+    "date": "1999-10-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|jm154ad1453": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|jm140ad0664": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j140ad7241": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j309ad1600": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j140ad7236": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j140ad7193": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j134at6928": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hillrom|p3200|j127ad6526": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17432148": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434560": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441256": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434159": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17433989": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434093": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434354": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441237": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434074": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434027": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441209": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434472": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434162": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434475": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434779": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434141": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434321": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434383": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|1744041": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434024": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434118": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17440578": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17440768": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434139": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17433973": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434426": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434019": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17433363": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434142": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434703": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434212": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434094": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17433443": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434341": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441087": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17440640": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434396": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434332": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434726": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434435": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434513": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434161": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434177": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434000": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17431765": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434512": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17433246": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434039": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17432437": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434735": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434064": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441258": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441252": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441249": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17441084": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17480601": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17434454": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hospira|pluma+|17451880": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu20240630en": {
+    "date": "2024-06-28",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406267en": {
+    "date": "2024-06-26",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406209en": {
+    "date": "2024-06-20",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406190en": {
+    "date": "2024-06-19",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406189en": {
+    "date": "2024-06-18",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202108144en": {
+    "date": "2021-08-14",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202108189en": {
+    "date": "2021-08-18",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202108193en": {
+    "date": "2021-08-19",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406183en": {
+    "date": "2024-06-18",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202108205en": {
+    "date": "2021-08-20",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406249en": {
+    "date": "2024-06-24",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406266en": {
+    "date": "2024-06-26",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406252en": {
+    "date": "2024-06-25",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406237en": {
+    "date": "2024-06-23",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406187en": {
+    "date": "2024-06-18",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202406188en": {
+    "date": "2024-06-18",
+    "confidence": 1.0
+  },
+  "jiangmen dacheng medical equipment co.|iob-507|wu202108208en": {
+    "date": "2021-08-20",
+    "confidence": 1.0
+  },
+  "lab corp.|642e|241013lb348": {
+    "date": "2024-10-13",
+    "confidence": 1.0
+  },
+  "lab corp.|642e|241013lb328": {
+    "date": "2024-10-13",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210147025": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20200275616": {
+    "date": "2020-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210147077": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210149187": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210101683": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210101685": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210147060": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 3|20210147032": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240217185": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240217163": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240217171": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240217177": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240219124": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240211343": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240211435": {
+    "date": "2024-02-01",
+    "confidence": 1.0
+  },
+  "linet|eleganza 4|20240315321": {
+    "date": "2024-03-01",
+    "confidence": 1.0
+  },
+  "masimo|rad8|m192824": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "masimo|rad8|m192444": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "masimo|rad8|m192465": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "masimo|rad8|m192344": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fs-28042613": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fs-28042614": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fs-28042615": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fsf5-28042623": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fs-28042602": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fs-28042236": {
+    "date": "2022-08-01",
+    "confidence": 1.0
+  },
+  "mindray|benevision n15|fsf5-11025372": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001824": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001806": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3a001717": {
+    "date": "2023-10-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3a001716": {
+    "date": "2023-10-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3a001721": {
+    "date": "2023-10-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001812": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3a001718": {
+    "date": "2023-10-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001805": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-34001722": {
+    "date": "2023-04-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001789": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001781": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001814": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-3c001780": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-27000897": {
+    "date": "2022-07-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-26000857": {
+    "date": "2022-06-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-26000861": {
+    "date": "2022-06-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-26000860": {
+    "date": "2022-06-01",
+    "confidence": 1.0
+  },
+  "mindray|epm12ma|ah9-26000859": {
+    "date": "2022-06-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|7500545": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|7500311": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|7500445": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|75500364": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|7500389": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "olympus|cv190|7500566": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de72870252": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de62229313": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de54011343": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de72832824": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de72870263": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de72856013": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de54011333": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de54011319": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de54011330": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de62223081": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de62229345": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp20|de72856005": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|de728a5916": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82001700": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061694": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061728": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061726": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061785": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061747": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82099472": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061749": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061730": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061733": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061720": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061692": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061717": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061736": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061763": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061695": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de882061716": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82099502": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82099483": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de82061791": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mp50|de820a3726": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|3569208": {
+    "date": "2013-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|3569221": {
+    "date": "2013-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|3569227": {
+    "date": "2013-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|2569230": {
+    "date": "2012-01-01",
+    "confidence": 1.0
+  },
+  "philips|intellivue mx40|3569212": {
+    "date": "2013-01-01",
+    "confidence": 1.0
+  },
+  "philips|m3002a|de73608832": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "philips|m3002a|de83623218": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2021005801196": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2021005801198": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|109035466": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2021005801199": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2022005800690": {
+    "date": "2022-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2022005800345": {
+    "date": "2022-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2022005800343": {
+    "date": "2022-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2022005800691": {
+    "date": "2022-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2022005800344": {
+    "date": "2022-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1061|2021005801197": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701271": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701256": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701268": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701273": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701253": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701272": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701266": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701259": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701254": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701257": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "stryker|1115|2017006701267": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18175660d4c1": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18175660d4d3": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18175660cabf": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18355660d0le": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18175660cb13": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|18175660cabc": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "thermo scientific|smartvue915|181751606dfd": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "unico|g380pl led|g38l-20141208": {
+    "date": "2014-12-08",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2053244x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a202057084x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2060906x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2066575x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2057370x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2055074x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2057912x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2057043x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1656130x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1661117x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1661082x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1661093x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1661114x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1656006x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1656212x": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1451284x": {
+    "date": "2014-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1863046x": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2062842x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2060107x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2066567x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2057032x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a206611345x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2066565x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a2055919x": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1257682": {
+    "date": "2012-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1155231x": {
+    "date": "2011-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1262471": {
+    "date": "2012-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1156405": {
+    "date": "2011-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1156388": {
+    "date": "2011-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|filac3000|a1051223": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|spot vital signs|201507871": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|spot vital signs|200810466": {
+    "date": "2008-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|spot vital signs|201507902": {
+    "date": "2015-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|7432348": {
+    "date": "2007-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|23038261": {
+    "date": "2023-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|747969": {
+    "date": "2007-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|7445105": {
+    "date": "2007-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|24519376": {
+    "date": "2024-01-01",
+    "confidence": 1.0
+  },
+  "welch allyn|suretempplus|074321po": {
+    "date": "2007-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x22f478419": {
+    "date": "2022-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x23l761535": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x19g176549": {
+    "date": "2019-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x22e470885": {
+    "date": "2022-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x18e025923": {
+    "date": "2018-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x25i944351": {
+    "date": "2025-09-01",
+    "confidence": 1.0
+  },
+  "zoll medical|aedplus|x25i944935": {
+    "date": "2025-09-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t09b109955": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t04g0718": {
+    "date": "2014-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t3t13d131852": {
+    "date": "2013-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t15f135497": {
+    "date": "2015-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t12l131022": {
+    "date": "2012-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t09b109792": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t12b127729": {
+    "date": "2012-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|td16b136583": {
+    "date": "2016-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t09k116484": {
+    "date": "2019-11-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t03d45722": {
+    "date": "2013-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t15b135017": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t11d124677": {
+    "date": "2011-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t1k132871": {
+    "date": "2011-11-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t08103497": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t14f133985": {
+    "date": "2014-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t04f60157": {
+    "date": "2014-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t098109977": {
+    "date": "2019-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t0787302": {
+    "date": "2017-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t14e133852": {
+    "date": "2014-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t04h61597": {
+    "date": "2014-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t16e136987": {
+    "date": "2016-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t13d131863": {
+    "date": "2013-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t04d57875": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t10g121505": {
+    "date": "2010-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t04a54870": {
+    "date": "2014-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t03g48599": {
+    "date": "2013-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t13d131879": {
+    "date": "2013-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t16b136570": {
+    "date": "2016-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|m series|t12b127735": {
+    "date": "2012-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23l173769": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23l173935": {
+    "date": "2023-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af25g186555": {
+    "date": "2025-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af25j188748": {
+    "date": "2025-10-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23g169205": {
+    "date": "2023-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24i180367": {
+    "date": "2024-09-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23g169292": {
+    "date": "2023-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23g169321": {
+    "date": "2023-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24a174904": {
+    "date": "2024-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24a174867": {
+    "date": "2024-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24c175990": {
+    "date": "2024-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24c175991": {
+    "date": "2024-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af19a091958": {
+    "date": "2019-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23g169315": {
+    "date": "2023-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24f178630": {
+    "date": "2024-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179402": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179173": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g178993": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179155": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179510": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24h179829": {
+    "date": "2024-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179180": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24f178395": {
+    "date": "2024-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179153": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179186": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24e178300": {
+    "date": "2024-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179403": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af24g179158": {
+    "date": "2024-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af25l189983": {
+    "date": "2025-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af23g169217": {
+    "date": "2023-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af11l019703": {
+    "date": "2011-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar13l006530": {
+    "date": "2013-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai10l000824": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16l061223": {
+    "date": "2016-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065076": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065023": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065078": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065063": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|afav17d064978": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065082": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065057": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065077": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065075": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d064998": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af17d065062": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|rseries|af17d065064": {
+    "date": "2017-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16c054998": {
+    "date": "2016-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16d055364": {
+    "date": "2016-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16d055704": {
+    "date": "2016-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16h058404": {
+    "date": "2016-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16h057957": {
+    "date": "2016-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16h058410": {
+    "date": "2016-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af16h058183": {
+    "date": "2016-08-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai10l000796": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai10l000816": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai10l000819": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar18g033409": {
+    "date": "2018-07-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar21a054264": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar22l073058": {
+    "date": "2022-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar20a045649": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai11f001156": {
+    "date": "2011-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar20c047049": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar20b046467": {
+    "date": "2020-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar20a045327": {
+    "date": "2020-01-01",
+    "confidence": 1.0
+  },
+  "zoll medical|propaq md|ai15c003871": {
+    "date": "2015-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar18c030657": {
+    "date": "2018-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar20c047039": {
+    "date": "2020-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar17b023487": {
+    "date": "2017-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar25c090387": {
+    "date": "2025-03-01",
+    "confidence": 1.0
+  },
+  "zoll medical|x series|ar22e067679": {
+    "date": "2022-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092952": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092950": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092199": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092935": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092455": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092465": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092949": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092928": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092207": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092946": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092943": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092936": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092428": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092467": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092223": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092456": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092482": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19b092446": {
+    "date": "2019-02-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af18l089149": {
+    "date": "2018-12-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099133": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099132": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099189": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099267": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099254": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19d096889": {
+    "date": "2019-04-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19e096912": {
+    "date": "2019-05-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099305": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099263": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099134": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "zoll medical|r series als|af19f099298": {
+    "date": "2019-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rts14024388ga": {
+    "date": "2014-01-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rts14104454ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rts14104453ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rts14104456ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt908362478ga": {
+    "date": "2008-09-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rts14104450ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166339ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166315ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166362ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166321ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt916162191sa": {
+    "date": "2016-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166380ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166373ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166320ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166336ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166372ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914126176ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914166337ga": {
+    "date": "2014-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt914126178ga": {
+    "date": "2014-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|apex pro ch|rt916059906ga": {
+    "date": "2016-02-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053978": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054510": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100067774": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054523": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054001": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054283": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054494": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054522": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054527": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100064600": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100064601": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053935": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053984": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053991": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100064603": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053980": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053932": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100053928": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054542": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "arjo inc.|flowtron|2100054511": {
+    "date": "2021-01-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315208552ga": {
+    "date": "2015-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315219009": {
+    "date": "2015-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315219102ga": {
+    "date": "2015-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa314358024ga": {
+    "date": "2014-09-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa312152525ga": {
+    "date": "2012-04-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315219007ga": {
+    "date": "2015-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310518384gr": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315070015ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310518261gr": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310496411gr": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230274gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa312132106gr": {
+    "date": "2012-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa3132300157gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315281904ga": {
+    "date": "2015-07-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079992ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310507316gr": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230430gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa309517777gr": {
+    "date": "2009-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230464gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa308511468gr": {
+    "date": "2008-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230676gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313219052gr": {
+    "date": "2013-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa311069819gr": {
+    "date": "2011-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315281909ga": {
+    "date": "2015-07-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230457gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310496410gr": {
+    "date": "2010-12-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa314326586ga": {
+    "date": "2014-08-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa318200468sa": {
+    "date": "2018-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230453gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315070003ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079984ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315070002ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079980ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa310465295gr": {
+    "date": "2010-11-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313106097gr": {
+    "date": "2013-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313127233gr": {
+    "date": "2013-03-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa318360435sa": {
+    "date": "2018-09-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079977ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079989ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315058576ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230456gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa313230407gr": {
+    "date": "2013-06-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa315079799ga": {
+    "date": "2015-02-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa311184365gr": {
+    "date": "2011-05-01",
+    "confidence": 1.0
+  },
+  "ge healthcare|patient data module (pdm)|sa312152311gr": {
+    "date": "2012-04-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5983": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5974": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5972": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp09ame5255": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp164me5640": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5982": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5981": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp217me5992": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp216me5980": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qp2164e5977": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8104": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8102": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q125me8074": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q126me8091": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q126me8089": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q126me8092": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q120me8059": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q126me8088": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8099": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q120me8057": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q120me8058": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q125me8078": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q141me8112": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8103": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8100": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q139me8105": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|qm171me6632": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q141me8115": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q125me8022": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q125me8076": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q0139me8098": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p1440|q145me8148": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j121ad6108": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j303ad1205": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j304ad1213": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|ji288ad1837": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j121ad6107": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j304ad1237": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|ji288ad1864": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j140ad7282": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j304ad1225": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j129ad6633": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j303ad1201": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j128ad6593": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j304ad1247": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|jh195ad1457": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j141ad7277": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j128ad6595": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j312ad1963": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j148ad7733": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j128ad6617": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j121ad6110": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|p3200|j304ad1215": {
+    "date": "2010-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bl070he0786": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b103ag0982": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bg192ag4641": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bl070he0791": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b1039ag1009": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bl230he3537": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6731": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6698": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6701": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6703": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6725": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6738": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6737": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b332ag6683": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6727": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6740": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6695": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b334ag6735": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6797": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b332ag6681": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6699": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6700": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6706": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b333ag6708": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bn177me1533": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|b332ag6677": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "hill rom|centuryp1400|bn177me1539": {
+    "date": "2002-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3757686": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3757504": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3757280": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3757194": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3757377": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827871": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3828391": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3816037": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3828200": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3822726": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3831807": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3830586": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3831239": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3782633": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3830354": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3825223": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3825288": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3785541": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3825471": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3785793": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3825020": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3823921": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3823577": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3805055": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3826615": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3826190": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3826314": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3826273": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827365": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827207": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827402": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3817236": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827856": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827685": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827744": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827658": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827902": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "baxter healthcare corp.|spectrum iq|3827796": {
+    "date": "2018-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3701": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3663": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3664": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3705": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3760": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3685": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671r3691": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de351b7530": {
+    "date": "2013-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671t5134": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671t5131": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671t4113": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671t5132": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de671t5133": {
+    "date": "2016-01-01",
+    "confidence": 1.0
+  },
+  "philips|mx500|de7770d7j2": {
+    "date": "2017-01-01",
+    "confidence": 1.0
+  },
+  "edan instruments|im50|m3331333-m14104900002": {
+    "date": "2014-01-01",
+    "confidence": 0.9
+  },
+  "edan instruments|im50|m3331333-m14900008": {
+    "date": "2014-01-01",
+    "confidence": 0.9
+  },
+  "edan instruments|im50|m3331333-m14104900009": {
+    "date": "2014-01-01",
+    "confidence": 0.9
+  },
+  "ge healthcare|patient data module (pdm)|saspx18510041sa": {
+    "date": "2018-05-01",
+    "confidence": 0.5
+  },
+  "ge healthcare|patient data module (pdm)|saspx18510114sa": {
+    "date": "2018-05-01",
+    "confidence": 0.5
+  },
+  "ge healthcare|patient data module (pdm)|saspx18500865sa": {
+    "date": "2018-05-01",
+    "confidence": 0.5
+  }
+}
