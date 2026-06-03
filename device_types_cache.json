@@ -1,13 +1,13 @@
 {
   "american diagnostic|ce 1434": {
-    "device_type": "Blood Pressure Cuff",
+    "device_type": "Stethoscope",
     "probable_typo": true,
     "confidence": 0.6
   },
   "biosonic|uc95": {
-    "device_type": "Ultrasonic Cleaner",
-    "probable_typo": false,
-    "confidence": 0.6
+    "device_type": "Ultrasound Scanner",
+    "probable_typo": true,
+    "confidence": 0.95
   },
   "biosonic|uc95d15": {
     "device_type": "Ultrasound Probe",
@@ -15,17 +15,17 @@
     "confidence": 0.6
   },
   "cogentix medical|cst-4000": {
-    "device_type": "Cystoscopy System",
-    "probable_typo": false,
+    "device_type": "Endoscopy System",
+    "probable_typo": true,
     "confidence": 0.6
   },
   "cogentix medical|cst-5000": {
-    "device_type": "Unknown Device",
+    "device_type": "Endoscopy System",
     "probable_typo": true,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "covidien|rapidvac": {
-    "device_type": "Suction Device",
+    "device_type": "Vacuum Drainage System",
     "probable_typo": false,
     "confidence": 0.6
   },
@@ -35,9 +35,9 @@
     "confidence": 0.6
   },
   "edan instruments|im3": {
-    "device_type": "Infusion Pump",
+    "device_type": "Patient Monitor",
     "probable_typo": false,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "edan instruments|se1200express": {
     "device_type": "ECG Machine",
@@ -57,11 +57,11 @@
   "edan instruments|im70": {
     "device_type": "Patient Monitor",
     "probable_typo": false,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "edan instruments|it20": {
-    "device_type": "Patient Monitor",
-    "probable_typo": true,
+    "device_type": "ECG Machine",
+    "probable_typo": false,
     "confidence": 0.6
   },
   "exergen|tat5000": {
@@ -72,7 +72,7 @@
   "hillrom|century": {
     "device_type": "Hospital Bed",
     "probable_typo": false,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "hillrom|centuryp1400": {
     "device_type": "Hospital Bed",
@@ -82,7 +82,7 @@
   "hillrom|pcenturyk3256": {
     "device_type": "Hospital Bed",
     "probable_typo": true,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "hillrom|p3200": {
     "device_type": "Hospital Bed",
@@ -102,7 +102,7 @@
   "lab corp.|642e": {
     "device_type": "Laboratory Analyzer",
     "probable_typo": true,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "linet|eleganza 3": {
     "device_type": "Hospital Bed",
@@ -120,7 +120,7 @@
     "confidence": 0.6
   },
   "mindray|benevision n15": {
-    "device_type": "Patient Monitor",
+    "device_type": "Ultrasound System",
     "probable_typo": false,
     "confidence": 0.6
   },
@@ -130,24 +130,24 @@
     "confidence": 0.95
   },
   "olympus|cv190": {
-    "device_type": "Video Processor",
+    "device_type": "Endoscopy Processor",
     "probable_typo": false,
     "confidence": 0.6
   },
   "philips|intellivue mp20": {
     "device_type": "Patient Monitor",
     "probable_typo": false,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "philips|intellivue mx40": {
-    "device_type": "Patient Monitor",
+    "device_type": "Telemetry Monitor",
     "probable_typo": false,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "philips|intellivue mp50": {
     "device_type": "Patient Monitor",
     "probable_typo": false,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "philips|m3002a": {
     "device_type": "Patient Monitor Module",
@@ -165,37 +165,37 @@
     "confidence": 0.6
   },
   "thermo scientific|smartvue915": {
-    "device_type": "Patient Monitor",
+    "device_type": "Laboratory Freezer",
     "probable_typo": true,
     "confidence": 0.6
   },
   "unico|g380pl led": {
-    "device_type": "LED Exam Light",
+    "device_type": "Dermatoscope",
     "probable_typo": false,
     "confidence": 0.6
   },
   "welch allyn|filac3000": {
-    "device_type": "Infant Thermometer",
+    "device_type": "Thermometer",
     "probable_typo": true,
     "confidence": 0.6
   },
   "welch allyn|spot vital signs": {
     "device_type": "Vital Signs Monitor",
     "probable_typo": false,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "welch allyn|suretempplus": {
-    "device_type": "Thermometer",
-    "probable_typo": true,
-    "confidence": 0.95
+    "device_type": "Digital Thermometer",
+    "probable_typo": false,
+    "confidence": 0.6
   },
   "zoll medical|aedplus": {
     "device_type": "Automated External Defibrillator",
     "probable_typo": false,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "zoll medical|m series": {
-    "device_type": "Defibrillator Monitor",
+    "device_type": "Defibrillator",
     "probable_typo": false,
     "confidence": 0.6
   },
@@ -212,20 +212,20 @@
   "zoll medical|x series": {
     "device_type": "Defibrillator Monitor",
     "probable_typo": false,
-    "confidence": 0.6
+    "confidence": 0.95
   },
   "zoll medical|propaq md": {
     "device_type": "Patient Monitor",
     "probable_typo": false,
-    "confidence": 0.95
-  },
-  "ge healthcare|apex pro ch": {
-    "device_type": "Patient Monitor",
-    "probable_typo": true,
     "confidence": 0.6
   },
+  "ge healthcare|apex pro ch": {
+    "device_type": "Ultrasound System",
+    "probable_typo": true,
+    "confidence": 0.95
+  },
   "arjo inc.|flowtron": {
-    "device_type": "Intermittent Pneumatic Compression Device",
+    "device_type": "Compression Therapy System",
     "probable_typo": false,
     "confidence": 0.6
   },
@@ -241,13 +241,13 @@
   },
   "hill rom|p3200": {
     "device_type": "Hospital Bed",
-    "probable_typo": true,
+    "probable_typo": false,
     "confidence": 0.6
   },
   "hill rom|centuryp1400": {
     "device_type": "Hospital Bed",
     "probable_typo": true,
-    "confidence": 0.95
+    "confidence": 0.6
   },
   "baxter healthcare corp.|spectrum iq": {
     "device_type": "Infusion Pump",

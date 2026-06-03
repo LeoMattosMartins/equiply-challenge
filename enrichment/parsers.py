@@ -199,12 +199,16 @@ def local_parse_serial_date(mfg, model, sn):
     model_lower = model.lower().strip()
     sn_stripped = re.sub(r'^\(\d+\)\s*', '', sn.strip())
     
+    from enrichment.metadata import validate_mfg_date
+    
     for keyword, parser_fn in PARSER_REGISTRY.items():
         if keyword in mfg_lower:
             parsed = parser_fn(mfg_lower, model_lower, sn_stripped)
             if parsed:
                 year, month, day = parsed
                 if 1950 <= year <= 2026:
-                    return f"{year:04d}-{max(1, min(12, month)):02d}-{max(1, min(28, day)):02d}"
+                    is_valid, _ = validate_mfg_date(mfg_lower, model_lower, year)
+                    if is_valid:
+                        return f"{year:04d}-{max(1, min(12, month)):02d}-{max(1, min(28, day)):02d}"
             return None
     return None

@@ -1,9 +1,10 @@
 The following medical device models are flagged as probable typos or formatting inconsistencies:
 
 Manufacturer: AMERICAN DIAGNOSTIC | Model: CE 1434 (Flagged as probable typo)
+Manufacturer: BIOSONIC | Model: UC95 (Flagged as probable typo)
 Manufacturer: BIOSONIC | Model: UC95D15 (Flagged as probable typo)
+Manufacturer: COGENTIX MEDICAL | Model: CST-4000 (Flagged as probable typo)
 Manufacturer: COGENTIX MEDICAL | Model: CST-5000 (Flagged as probable typo)
-Manufacturer: EDAN INSTRUMENTS | Model: IT20 (Flagged as probable typo)
 Manufacturer: HILLROM | Model: CENTURYP1400 (Flagged as probable typo)
 Manufacturer: HILLROM | Model: PCENTURYK3256 (Flagged as probable typo)
 Manufacturer: HILLROM | Model: P3200 (Flagged as probable typo)
@@ -12,9 +13,7 @@ Manufacturer: LAB CORP. | Model: 642E (Flagged as probable typo)
 Manufacturer: MINDRAY | Model: EPM12MA (Flagged as probable typo)
 Manufacturer: THERMO SCIENTIFIC | Model: SMARTVUE915 (Flagged as probable typo)
 Manufacturer: WELCH ALLYN | Model: FILAC3000 (Flagged as probable typo)
-Manufacturer: WELCH ALLYN | Model: SURETEMPPLUS (Flagged as probable typo)
 Manufacturer: GE HEALTHCARE | Model: APEX PRO CH (Flagged as probable typo)
-Manufacturer: HILL ROM | Model: P3200 (Flagged as probable typo)
 Manufacturer: HILL ROM | Model: CENTURYP1400 (Flagged as probable typo)
 Model Inconsistency: Corrected spelling typo 'INTELLIVUE MP30' to dominant model 'INTELLIVUE MX40' for manufacturer 'Philips' (Levenshtein distance: 2)
 Model Inconsistency: Standardized model spelling 'R Series' to match dominant variant 'RSERIES' for manufacturer 'ZOLL Medical'

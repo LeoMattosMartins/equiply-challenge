@@ -11,6 +11,7 @@ load_dotenv()
 # Constants
 TYPES_CACHE_FILE = 'device_types_cache.json'
 DATES_CACHE_FILE = 'serial_dates_cache.json'
+MANUFACTURERS_CACHE_FILE = 'manufacturers_cache.json'
 CACHE_LOCK = Lock()
 
 def normalize_date(date_str):

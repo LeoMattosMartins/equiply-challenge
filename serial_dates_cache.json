@@ -51,14 +51,6 @@
     "date": "2017-02-01",
     "confidence": 1.0
   },
-  "cogentix medical|cst-5000|cs0709n": {
-    "date": "2007-03-01",
-    "confidence": 1.0
-  },
-  "cogentix medical|cst-5000|cs0715n": {
-    "date": "2007-04-01",
-    "confidence": 1.0
-  },
   "covidien|rapidvac|vl012301x": {
     "date": "2023-01-01",
     "confidence": 1.0
@@ -3175,19 +3167,27 @@
     "date": "2017-01-01",
     "confidence": 1.0
   },
-  "edan instruments|im50|m3331333-m14104900002": {
-    "date": "2014-01-01",
-    "confidence": 0.9
+  "cogentix medical|cst-5000|cs0715n": {
+    "date": "2015-07-01",
+    "confidence": 0.5
+  },
+  "cogentix medical|cst-5000|cs0709n": {
+    "date": "2015-07-01",
+    "confidence": 0.5
   },
   "edan instruments|im50|m3331333-m14900008": {
-    "date": "2014-01-01",
-    "confidence": 0.9
+    "date": "2014-09-01",
+    "confidence": 0.5
+  },
+  "edan instruments|im50|m3331333-m14104900002": {
+    "date": "2014-10-01",
+    "confidence": 0.5
   },
   "edan instruments|im50|m3331333-m14104900009": {
-    "date": "2014-01-01",
-    "confidence": 0.9
+    "date": "2014-10-01",
+    "confidence": 0.5
   },
-  "ge healthcare|patient data module (pdm)|saspx18510041sa": {
+  "ge healthcare|patient data module (pdm)|saspx18500865sa": {
     "date": "2018-05-01",
     "confidence": 0.5
   },
@@ -3195,7 +3195,7 @@
     "date": "2018-05-01",
     "confidence": 0.5
   },
-  "ge healthcare|patient data module (pdm)|saspx18500865sa": {
+  "ge healthcare|patient data module (pdm)|saspx18510041sa": {
     "date": "2018-05-01",
     "confidence": 0.5
   }

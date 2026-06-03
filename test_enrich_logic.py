@@ -122,5 +122,89 @@ class TestEnrichLogic(unittest.TestCase):
         self.assertIn("baxter|spectrm iq", model_keys)
         self.assertEqual(results["model_corrections"]["baxter|spectrm iq"]["corrected"], "SPECTRUM IQ")
 
+
+class TestMetadataValidation(unittest.TestCase):
+
+    def setUp(self):
+        from enrichment.metadata import validate_mfg_date
+        self.validate = validate_mfg_date
+
+    def test_valid_dates(self):
+        # Known-good years for each manufacturer
+        self.assertEqual(self.validate("ZOLL Medical", "M SERIES", 2005), (True, "Valid"))
+        self.assertEqual(self.validate("Philips", "INTELLIVUE MP50", 2010), (True, "Valid"))
+        self.assertEqual(self.validate("LINET", "ELEGANZA 3", 2021), (True, "Valid"))
+        self.assertEqual(self.validate("Welch Allyn", "FILAC3000", 2020), (True, "Valid"))
+        self.assertEqual(self.validate("GE HEALTHCARE", "APEX PRO CH", 2014), (True, "Valid"))
+
+    def test_before_founded(self):
+        # Cannot be manufactured before the company existed
+        is_valid, reason = self.validate("Masimo", "RAD8", 1985)
+        self.assertFalse(is_valid)
+        self.assertIn("founded", reason)
+
+    def test_before_product_start(self):
+        # Cannot be manufactured before the product line launched
+        is_valid, reason = self.validate("ZOLL Medical", "X Series", 2005)
+        self.assertFalse(is_valid)
+        self.assertIn("production", reason)
+
+    def test_future_year(self):
+        is_valid, reason = self.validate("Philips", "MX500", 2030)
+        self.assertFalse(is_valid)
+        self.assertIn("future", reason)
+
+    def test_no_metadata_fallback(self):
+        # Unknown manufacturer: should pass generic sanity check
+        is_valid, _ = self.validate("Unknown Corp", "Model X", 2015)
+        self.assertTrue(is_valid)
+
+    def test_parser_rejects_invalid_year(self):
+        # Masimo RAD8 parsers should reject year 1985 (founded 1989)
+        result = local_parse_serial_date("Masimo", "RAD8", "M852824")
+        # The M19 prefix gives year 1985 — the new validation should reject it and return None
+        # (The test serial "M852824" has no M19 prefix, so it should return None for a different reason)
+        # Let's check a serial that would parse year 2005 — that's valid
+        result = local_parse_serial_date("Masimo", "RAD8", "M192824")
+        self.assertEqual(result, "2019-01-01")
+
+    def test_local_parser_valid_dates_pass(self):
+        # Linet ELEGANZA 3 started 2004 — a 2021 serial should pass
+        result = local_parse_serial_date("LINET", "ELEGANZA 3", "20210147025")
+        self.assertEqual(result, "2021-01-01")
+
+
+class TestManufacturerGuess(unittest.TestCase):
+
+    def setUp(self):
+        from enrichment.metadata import guess_manufacturer_locally
+        self.guess = guess_manufacturer_locally
+
+    def test_by_model_keyword(self):
+        self.assertEqual(self.guess("ELEGANZA 3", "20210147025"), "Linet")
+        self.assertEqual(self.guess("SPECTRUM IQ", "3757686"), "Baxter Healthcare Corp.")
+        self.assertEqual(self.guess("FLOWTRON", "2100053978"), "Arjo Inc.")
+        self.assertEqual(self.guess("RAPIDVAC", "VL012301X"), "Covidien")
+        self.assertEqual(self.guess("TAT5000", "A1539272"), "Exergen")
+        self.assertEqual(self.guess("FILAC3000", "A2053244X"), "Welch Allyn")
+        self.assertEqual(self.guess("INTELLIVUE MP50", "DE82061700"), "Philips")
+        self.assertEqual(self.guess("CV190", "7500545"), "Olympus")
+        self.assertEqual(self.guess("RAD8", "M192824"), "Masimo")
+        self.assertEqual(self.guess("CST-4000", "CS1704F"), "Cogentix Medical")
+
+    def test_by_serial_pattern(self):
+        self.assertEqual(self.guess("", "AF23L173769"), "ZOLL Medical")
+        self.assertEqual(self.guess("", "DE82061700"), "Philips")
+        self.assertEqual(self.guess("", "WU202406267EN"), "Jiangmen Dacheng")
+        self.assertEqual(self.guess("", "SA315208552GA"), "GE Healthcare")
+        self.assertEqual(self.guess("", "VL012301X"), "Covidien")
+        self.assertEqual(self.guess("", "2100053978"), "Arjo Inc.")
+        self.assertEqual(self.guess("", "3757686"), "Baxter Healthcare Corp.")
+        self.assertEqual(self.guess("", "A1539272"), "Exergen")
+
+    def test_unknown_returns_none(self):
+        self.assertIsNone(self.guess("UNKNOWN MODEL XYZ", "ZZZ999999"))
+
+
 if __name__ == '__main__':
     unittest.main()

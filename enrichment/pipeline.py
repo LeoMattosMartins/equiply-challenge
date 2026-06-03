@@ -4,10 +4,11 @@ import re
 import sys
 import json
 
-from enrichment.utils import load_json_cache, save_json_cache, TYPES_CACHE_FILE, DATES_CACHE_FILE, normalize_date
+from enrichment.utils import load_json_cache, save_json_cache, TYPES_CACHE_FILE, DATES_CACHE_FILE, MANUFACTURERS_CACHE_FILE, normalize_date
 from enrichment.parsers import local_parse_serial_date
 from enrichment.analyzer import analyze_format_consistency
-from enrichment.llm import resolve_device_type_consensus, resolve_serial_dates_consensus
+from enrichment.llm import resolve_device_type_consensus, resolve_serial_dates_consensus, resolve_manufacturer_consensus
+from enrichment.metadata import guess_manufacturer_locally, validate_mfg_date, get_model_metadata
 
 def write_typos_report(types_cache, corrections):
     typo_models = []
@@ -105,6 +106,9 @@ def enrich_csv(input_path, output_path, api_key=None):
                 "confidence": 1.0
             }
     save_json_cache(DATES_CACHE_FILE, dates_cache)
+
+    # Load manufacturers cache (for Pass 0 results)
+    manufacturers_cache = load_json_cache(MANUFACTURERS_CACHE_FILE)
     
     # Step 1: Read input and remove duplicate rows based on (manufacturer, model, serial_number)
     raw_rows = []
@@ -142,7 +146,50 @@ def enrich_csv(input_path, output_path, api_key=None):
             
     if duplicates_removed > 0:
         print(f"Removed {duplicates_removed} duplicate rows from the dataset.")
-        
+
+    # ─── Pass 0: Manufacturer Inference ───────────────────────────────────────
+    # For rows with empty/unknown manufacturer, attempt local inference first,
+    # then fall back to the web+LLM consensus. Results are persisted in cache.
+    mfg_resolved = 0
+    rows_needing_llm_mfg = []
+
+    for r in raw_rows:
+        if r["mfg"].strip():
+            continue  # already known
+
+        cache_key = f"{r['model'].lower()}|{r['sn'].lower()}"
+        if cache_key in manufacturers_cache:
+            guessed = manufacturers_cache[cache_key]
+        else:
+            guessed = guess_manufacturer_locally(r["model"], r["sn"])
+
+        if guessed:
+            r["mfg"] = guessed
+            if r["mfg_key"]:
+                r["row_dict"][r["mfg_key"]] = guessed
+            manufacturers_cache[cache_key] = guessed
+            mfg_resolved += 1
+        else:
+            rows_needing_llm_mfg.append(r)
+
+    # LLM fallback for rows still missing a manufacturer
+    if rows_needing_llm_mfg and api_key:
+        print(f"Pass 0: Using LLM to infer manufacturer for {len(rows_needing_llm_mfg)} rows...")
+        for r in rows_needing_llm_mfg:
+            cache_key = f"{r['model'].lower()}|{r['sn'].lower()}"
+            guessed = resolve_manufacturer_consensus(r["model"], r["sn"], api_key)
+            if guessed and guessed != "Unknown Manufacturer":
+                r["mfg"] = guessed
+                if r["mfg_key"]:
+                    r["row_dict"][r["mfg_key"]] = guessed
+                manufacturers_cache[cache_key] = guessed
+                mfg_resolved += 1
+
+        save_json_cache(MANUFACTURERS_CACHE_FILE, manufacturers_cache)
+
+    if mfg_resolved:
+        print(f"Pass 0: Resolved manufacturer for {mfg_resolved} rows.")
+
     # Analyze format outliers dynamically
     corrections = analyze_format_consistency(raw_rows)
     
@@ -227,6 +274,11 @@ def enrich_csv(input_path, output_path, api_key=None):
             mfg = info["mfg"]
             model = info["model"]
             serials_list = list(info["serials"])
+
+            # Fetch metadata bounds so we can validate LLM-returned dates
+            meta = get_model_metadata(mfg, model)
+            min_year = meta["product_start_year"] if meta else 1900
+            min_year_str = f"{min_year}-01-01"
             
             batch_size = 30
             for i in range(0, len(serials_list), batch_size):
@@ -235,9 +287,19 @@ def enrich_csv(input_path, output_path, api_key=None):
                 serial_dates = res.get("serial_dates", {})
                 confidence = res.get("confidence", 0.90)
                 for sn, date_str in serial_dates.items():
+                    normalized = normalize_date(date_str)
+                    # Validate the date the LLM returned against metadata bounds
+                    m = re.match(r'^(\d{4})', normalized)
+                    if m:
+                        llm_year = int(m.group(1))
+                        is_valid, reason = validate_mfg_date(mfg, model, llm_year)
+                        if not is_valid:
+                            print(f"  ⚠ LLM date {normalized} for {mfg}|{model}|{sn} failed validation: {reason}. Falling back to {min_year_str}.", file=sys.stderr)
+                            normalized = min_year_str
+                            confidence = max(0.3, confidence - 0.2)
                     d_key = f"{mfg.lower()}|{model.lower()}|{sn.lower()}"
                     dates_cache[d_key] = {
-                        "date": normalize_date(date_str),
+                        "date": normalized,
                         "confidence": confidence
                     }
                     

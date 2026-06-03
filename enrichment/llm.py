@@ -103,17 +103,33 @@ def resolve_device_type_consensus(mfg, model, api_key):
 def query_serial_dates(model_name, mfg, model, sns, search_context, api_key):
     try:
         from openai import OpenAI
+        from enrichment.metadata import get_model_metadata
         client = OpenAI(api_key=api_key)
+        
+        meta = get_model_metadata(mfg, model)
+        metadata_context = ""
+        if meta:
+            metadata_context = f"""
+        - Company Founded Year: {meta['founded_year']}
+        - Product '{model}' Production Start Year: {meta['product_start_year']}
+        - Documented Serial Format Reference Sources:
+          * {meta['sources'][0]}
+          * {meta['sources'][1]}
+            """
         
         prompt = f"""
         We are extracting the manufacturing date for medical equipment serial numbers.
         We performed a web search for manufacturer '{mfg}' and model '{model}' to find serial number formats and found these snippets:
         {search_context}
 
+        We have verified company and product metadata for context:
+        {metadata_context}
+
         Here is a list of serial numbers:
         {json.dumps(sns)}
 
-        Please analyze the serial numbers and the snippets to extract or estimate the manufactured date for each serial number.
+        Please analyze the serial numbers, verified metadata, and search snippets to extract or estimate the manufactured date for each serial number.
+        - Validate the dates: The manufacturing year MUST NOT be before the company was founded ({meta['founded_year'] if meta else '1800'}) or before the product started production ({meta['product_start_year'] if meta else '1900'}). It must also not be after 2026.
         - Try all different date formats and coding schemes commonly used by '{mfg}' or in medical hardware (e.g., YYMMDD, YYYYMMDD, YYWW, YYMonthCode, year at the end, year at the beginning, week-to-month mapping, etc.) to extract the year and month.
         - If the date is not extractable from the serial number format, make an educated guess of the manufacture date based on the production years of '{model}'.
         - Format each date strictly in YYYY-MM-DD format (if day/month is not extractable, default to YYYY-MM-01 or YYYY-01-01).
@@ -172,3 +188,67 @@ def resolve_serial_dates_consensus(mfg, model, sns, api_key):
         "serial_dates": dates_mini,
         "confidence": confidence
     }
+
+def search_manufacturer_web(model, sn):
+    try:
+        from duckduckgo_search import DDGS
+        query = f'"{model}" "{sn}" medical device manufacturer brand name company'
+        print(f"Searching web for manufacturer of model {model}: {query}...")
+        with DDGS() as ddgs:
+            results = list(ddgs.text(query, max_results=3))
+            
+        snippets = []
+        for r in results:
+            snippets.append(f"Title: {r.get('title')}\nSnippet: {r.get('body')}")
+        return "\n\n".join(snippets)
+    except Exception as e:
+        print(f"Web search failed for manufacturer of model {model}: {e}", file=sys.stderr)
+        return "No web context found."
+
+def query_manufacturer(model_name, model, sn, search_context, api_key):
+    try:
+        from openai import OpenAI
+        client = OpenAI(api_key=api_key)
+        
+        prompt = f"""
+        We are trying to identify the manufacturer of a medical equipment model.
+        The model is '{model}' and serial number is '{sn}'.
+        We performed a web search and found these snippets:
+        {search_context}
+
+        Please analyze this information and your own knowledge to determine the manufacturer name.
+        - Give the canonical name of the manufacturer (e.g., 'ZOLL Medical', 'Philips', 'Welch Allyn', etc.).
+        - If you cannot find a specific match, make an educated guess.
+
+        Return ONLY a JSON object matching this structure:
+        {{
+            "manufacturer": "Manufacturer Name"
+        }}
+        """
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"},
+            max_completion_tokens=1000
+        )
+        return json.loads(response.choices[0].message.content)
+    except Exception as e:
+        print(f"Error querying manufacturer for model {model_name} on {model}: {e}", file=sys.stderr)
+        return None
+
+def resolve_manufacturer_consensus(model, sn, api_key):
+    search_context = search_manufacturer_web(model, sn)
+    
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        future_mini = executor.submit(query_manufacturer, "gpt-5.4-mini", model, sn, search_context, api_key)
+        future_nano = executor.submit(query_manufacturer, "gpt-5.4-nano", model, sn, search_context, api_key)
+        
+        res_mini = future_mini.result()
+        res_nano = future_nano.result()
+        
+    if not res_mini and not res_nano:
+        return "Unknown Manufacturer"
+        
+    if not res_mini:
+        return res_nano.get("manufacturer", "Unknown Manufacturer")
+    return res_mini.get("manufacturer", "Unknown Manufacturer")
