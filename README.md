@@ -1,251 +1,296 @@
 # Equiply Data Enrichment Portal
 
-An intelligent, self-healing, and WCAG 2.2 AA-compliant hospital equipment data enrichment dashboard and CLI application. 
+Equiply is a hospital equipment enrichment dashboard and CLI. It cleans messy inventory CSVs, standardizes metadata, and adds:
+
+1. **Device type**: Defibrillator, Infusion Pump, Ventilator, and similar categories.
+2. **Manufacture date**: Parsed from manufacturer serial-number rules, then checked against company and model date bounds.
 
 VIDEO: https://www.youtube.com/watch?v=Ar72ZvwpCqo
 
-This portal processes raw, messy hospital equipment logs (containing mismatched manufacturers, typos in model names, and complex/inconsistent serial numbers), normalizes the metadata, and enriches it with:
-1. **Standardized Device Types** (e.g., Defibrillator, Infusion Pump, Ventilator).
-2. **Accurate Manufacture Dates** resolved from manufacturer-specific serial format parsers, DuckDuckGo searches, and OpenAI consensus logic.
-
----
-
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
 - [System Architecture](#system-architecture)
-- [Data Enrichment & Self-Healing Pipeline](#data-enrichment--self-healing-pipeline)
-- [WCAG 2.2 AA Compliance Summary](#wcag-22-aa-compliance-summary)
-- [Setup & Installation](#setup--installation)
-- [Usage Guide](#usage-guide)
-  - [CLI Enrichment Engine](#cli-enrichment-engine)
-  - [Local FastAPI & React Dashboard](#local-fastapi--react-dashboard)
-- [Testing Suite](#testing-suite)
+- [Enrichment Pipeline](#enrichment-pipeline)
+- [Manufacturer Serial Number Sources](#manufacturer-serial-number-sources)
+- [WCAG 2.2 AA Compliance](#wcag-22-aa-compliance)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Testing](#testing)
 - [File Structure](#file-structure)
-
----
+- [Future Improvements](#future-improvements)
 
 ## Project Overview
 
-Hospital inventory systems often contain entries with:
-- **Typographical errors**: (e.g., `M1722A` vs `M1722 A`, spelling mistakes like `American Diagnostcs`).
-- **Missing or inconsistent fields**: Unknown device types or serial numbers without manufacture dates.
-- **Varying serial formats**: Every manufacturer encodes manufacture dates differently (e.g., GE uses year/week codes, American Diagnostics uses specific prefixes, ZOLL embeds dates in alphanumeric patterns).
+Hospital inventory exports often include:
 
-Equiply solves this by combining local, high-speed heuristic parsers for 25+ major medical manufacturers, a dynamic self-healing consistency engine that applies majority-based rules across the dataset (e.g., fixing missing serial prefixes or spacing typos), and an LLM/Web-search consensus system for fallback resolution.
+- **Typos**: `M1722A` vs `M1722 A`, `American Diagnostcs`, and similar variants.
+- **Missing fields**: Blank manufacturers, unknown device types, and serials without dates.
+- **Different serial formats**: GE uses product/year/week fields, ZOLL uses product/date/sequence fields, and Welch Allyn/Hillrom models use model-specific label formats.
 
----
+Equiply combines local parsers for 25+ medical manufacturers, dataset-level correction rules, and web/LLM fallback resolution. Local parsers handle known formats first; fallback logic is used only when parsing fails or metadata validation rejects the date.
 
 ## Key Features
 
-- 🛠️ **Modular & Elif-Free Engine**: Replaced complex conditional chains with a registry-based, pattern-matching design.
-- 🔄 **Self-Healing Consistency**: Analyzes the dataset as a whole to learn prefix patterns (like American Diagnostics requiring `C` in front of serial numbers) and spelling corrections (Levenshtein distance matching), applying corrections dynamically and writing them to a `formatting_corrections.txt` report exposed to the frontend.
-- 🌐 **Web & LLM Consensus**: Performs DuckDuckGo web searches and runs consensus logic using gpt-5.4-mini (OpenAI API) to resolve unknown formats and ensure high data accuracy.
-- 🗄️ **Thread-Safe Cached Storage**: Fast, locked cache mechanisms prevent redundant LLM and Search queries.
-- ♿ **WCAG 2.2 AA Compliance**: Built for everyone with semantic HTML5 elements, keyboard-accessible upload zones and table headers, high-visibility focus states, and >4.5:1 color contrast ratios in both light and dark themes.
-- 📊 **Interactive Dashboard**: Modern glassmorphic frontend built with React and Vite, featuring distribution charts, paginated and searchable records tables, a real-time rules manager, manual override rules, and an auto-applied corrections log.
-
----
+- **Registry-based parser engine**: Manufacturer parsers are registered functions, avoiding long conditional chains.
+- **Dataset self-healing**: Learns common serial prefixes and model spellings, applies outlier fixes, and writes `formatting_corrections.txt` and `probable_typos.txt`.
+- **Web and LLM fallback**: Uses DuckDuckGo results plus OpenAI consensus prompts for unknown formats.
+- **Thread-safe caches**: Locked JSON caches avoid repeated search and LLM calls.
+- **Accessible dashboard**: Semantic HTML, keyboard support, visible focus states, and AA contrast in light and dark themes.
+- **Interactive UI**: Uploads CSVs, shows metrics, displays paginated/searchable records, manages override rules, and downloads enriched output.
 
 ## System Architecture
 
-The project is structured with a clean separation of concerns between the backend pipeline (Python) and the frontend dashboard (React).
-
 ```mermaid
 graph TD
-    subgraph Frontend [React Single Page App]
+    subgraph Frontend [React SPA]
         App[App.jsx] --> Theme[Theme Controller]
         App --> Upload[Dropzone Uploader]
         App --> Table[Paginated Sortable Table]
-        App --> Stats[Interactive Chart & Metrics]
-        App --> Overrides[Custom Override Rules]
+        App --> Stats[Charts and Metrics]
+        App --> Overrides[Override Rules]
     end
 
-    subgraph Backend [FastAPI Server]
-        server[server.py] --> static[Serve Static Assets /dist]
-        server --> api_enrich[API: /api/enrich]
-        server --> api_rules[API: /api/rules & overrides]
+    subgraph Backend [FastAPI]
+        server[server.py] --> static[Serve dist assets]
+        server --> api_enrich[POST /api/enrich]
+        server --> api_rules[/api/rules and overrides]
     end
 
-    subgraph Python Pipeline [enrichment/ package]
-        enrich_facade[enrich.py Facade] --> pipeline[pipeline.py]
-        pipeline --> parsers[parsers.py: 25+ Manufacturers]
-        pipeline --> analyzer[analyzer.py: Spelling & Consistency]
-        pipeline --> llm[llm.py: Search & OpenAI]
-        pipeline --> utils[utils.py: File Locks & Cache]
+    subgraph Pipeline [enrichment package]
+        facade[enrich.py facade] --> pipeline[pipeline.py]
+        pipeline --> parsers[parsers.py]
+        pipeline --> analyzer[analyzer.py]
+        pipeline --> llm[llm.py]
+        pipeline --> utils[utils.py]
     end
 
-    App -- HTTP Requests --> server
-    server -- Invokes --> enrich_facade
+    App -- HTTP --> server
+    server -- calls --> facade
 ```
 
-### Module Breakdown
+### Modules
 
-1. **`enrich.py` (Facade)**: Provides a single, clean API entry point for both the CLI utility and the FastAPI backend.
-2. **`enrichment/pipeline.py`**: Controls the multi-pass enrichment pipeline. Handles CSV reading/writing, duplicate removal, metric calculations, and report generation.
-3. **`enrichment/parsers.py`**: Houses individual, isolated parsers for 25+ manufacturers. Employs a dispatcher registry to parse serial numbers locally in sub-millisecond execution times.
-4. **`enrichment/analyzer.py`**: Computes Levenshtein distances to correct spelling typos and executes format consistency checks to repair structural serial number issues.
-5. **`enrichment/llm.py`**: Coordinates DuckDuckGo web lookups and queries OpenAI consensus prompts to resolve unknown devices.
-6. **`enrichment/utils.py`**: Manages environment variables, thread-safe file locks, date normalizations (e.g. mapping out-of-bounds dates to `1900-01-01`), and JSON cache files.
+1. **`enrich.py`**: Shared CLI and FastAPI entry point.
+2. **`enrichment/pipeline.py`**: CSV read/write, deduplication, manufacturer inference, metrics, and reports.
+3. **`enrichment/parsers.py`**: Manufacturer-specific serial parsers with metadata validation.
+4. **`enrichment/analyzer.py`**: Levenshtein typo checks and serial-format consistency fixes.
+5. **`enrichment/llm.py`**: Search and OpenAI consensus for unknown devices and dates.
+6. **`enrichment/metadata.py`**: Company founding years, model start years, source URLs, date validation, and local manufacturer guessing.
+7. **`enrichment/utils.py`**: Environment loading, cache locks, date normalization, and JSON cache helpers.
 
----
+## Enrichment Pipeline
 
-## Data Enrichment & Self-Healing Pipeline
-
-The pipeline operates in multiple passes to clean and enrich data:
-
-```
-Raw CSV ➔ Deduplication ➔ Formatting Analyzer ➔ Local Registry Parsers ➔ Web & LLM Fallback ➔ Cache Rules ➔ Enriched Output
+```text
+Raw CSV -> Deduplicate -> Infer Manufacturer -> Analyze Formatting -> Local Parsers
+        -> Metadata Validation -> Web/LLM Fallback -> Date Bounds -> Cache -> Output
 ```
 
-1. **Deduplication**: Drops exact duplicates in the input dataset.
-2. **Self-Healing Format Analysis**:
-   - **Prefix Alignment**: Scans serial prefixes per manufacturer. If the vast majority (e.g., American Diagnostics) start with a prefix like `C`, it prepends `C` to the outlier serial numbers, correcting typos.
-   - **Model Normalization**: Standardizes spacing (e.g. `M SERIES` vs `MSERIES`) and corrects near-matches using Levenshtein distance.
-   - **Report Writing**: Logs all formatting corrections to `formatting_corrections.txt` and probable typos to `probable_typos.txt`.
-3. **Local Date Parsing**: Maps the serial number to its manufacturer's format rule (e.g., `Welch Allyn` serials starting with `H` signify the year, GE serials starting with letters signify manufacturing week/year).
-4. **Search & LLM Consensus Fallback**: If local parsing fails, the system executes two passes (one for Device Type, one for Date) searching DuckDuckGo and passing findings to gpt-5.4-mini to extract a logical consensus.
-5. **Caching & Rules Storage**: Outputs are cached in local JSON structures (`device_rules_cache.json`, `device_types_cache.json`, `serial_dates_cache.json`) to guarantee sub-millisecond lookups for subsequent runs.
+0. **Manufacturer inference**: Missing manufacturers are resolved by local model/serial hints first, then DuckDuckGo plus LLM consensus. Results are cached in `manufacturers_cache.json`.
+1. **Deduplication**: Exact duplicate rows are removed.
+2. **Format analysis**: The analyzer fixes common serial prefixes, normalizes model spacing, detects near-match typos, and writes reports.
+3. **Local parsing**: `parsers.py` maps serials to manufacturer rules, such as ZOLL `YYM` date codes or GE product/year/week fields.
+4. **Metadata validation**: Parsed years must be later than the company founding year and model start year in `metadata.py`.
+5. **Search/LLM fallback**: Failed or rejected parses trigger a date/type lookup using metadata context and `gpt-5.4-mini` / `gpt-5.4-nano` consensus.
+6. **Caching**: Device types, dates, rules, and manufacturers are cached for faster reruns.
 
----
+## Manufacturer Serial Number Sources
 
-## WCAG 2.2 AA Compliance Summary
+The previous README table mixed source types and had a broken column header. This version separates **verified serial-number decoding sources** from general product metadata. A source is listed here only if it explains how to read a serial number or label date field on that company's devices.
 
-The web dashboard is fully compliant with **WCAG 2.2 AA** standards. Key enhancements include:
+| Manufacturer | Covered model(s) | Serial/date rule used by parser | Verified source |
+|---|---|---|---|
+| GE Healthcare | MAC 3500; used as the GE Healthcare serial format basis for GE medical devices with product/year/week serials | Product code, 2-digit manufacture year, 2-digit fiscal week, sequence, site, and characteristic fields | [GE MAC 3500 Service Manual PDF](https://discountcardiology.com/documents/1357_MAC3500-MANUAL.pdf); [ManualsLib page 18](https://www.manualslib.com/manual/1719909/Ge-Mac-3500.html?page=18) |
+| Hillrom / Welch Allyn | ELI 230 | `YYYWWSSSSSSS`: fixed leading `1`, 2-digit manufacture year, manufacture week, sequence number | [Hillrom ELI 230 Service Manual PDF](https://www.hillrom.com/content/dam/hillrom-aem/us/en/sap-documents/LIT/9515-/9515-175-50-ENGLITPDF.pdf) |
+| Hillrom / Welch Allyn | Connex Spot Monitor | `MMMMXXXXWWYY`: plant, sequence, manufacture week, manufacture year | [ManualsLib Connex Spot Monitor service manual, device serial label](https://www.manualslib.com/manual/2875681/Hillrom-Welch-Allyn-Connex-Spot-Monitor.html) |
+| Welch Allyn | Spot Vital Signs 420 Series | 9-digit serial: first 4 digits are manufacture year, last 5 are unit sequence | [Welch Allyn Spot Vital Signs service manual, serial numbering system](https://www.manualslib.com/manual/1391564/Welch-Allyn-Spot-Vital-Signs.html?page=75) |
+| ZOLL Medical | AED Plus | Characters after `X`: 2 digits are manufacture year; following letter is month | [ZOLL AED Plus ZAS download page](https://www.zoll.com/en-us/products/software-and-data/public-access-software/aed-plus-software-download) |
+| ZOLL Medical | R Series | 2-character product code, 3-character date-of-manufacture code, then unit serial; R Series product code is `AF`; date code is `YYM` | [ZOLL R Series service manual, serial number section](https://www.manualslib.com/manual/1200420/Zoll-R-Series.html?page=400) |
+| ZOLL Medical | X Series / Propaq MD | 2-character product code, 3-character `YYM` date-of-manufacture code, then unit serial | [ZOLL X Series operator manual, serial number section](https://www.manualslib.com/manual/1283001/Zoll-X-Series.html?page=40); [ZOLL Propaq MD operator manual, serial number section](https://www.manualslib.com/manual/1225133/Zoll-Propaq-Md.html?page=39) |
 
-* **Color Contrast (Success Criterion 1.4.3 & 1.4.11)**: All text elements, form fields, and status badges satisfy a contrast ratio of at least 4.5:1 (and 3:1 for large text/icons) against their backgrounds in both Dark and Light themes.
-* **Keyboard Navigation (Success Criterion 2.1.1)**:
-  - The custom Drag & Drop upload zone is focusable and can be activated via `Space` or `Enter`.
-  - Data table headers can be focused and toggled for sorting via the keyboard.
-  - Form fields, buttons, and pagination controls support intuitive `Tab` indexing.
-* **Focus Visible (Success Criterion 2.4.7)**: Interactive elements display a high-contrast focus ring (`3px solid hsl(var(--primary-color))` with a `2px` offset) when navigated via keyboard.
-* **Screen Reader Accessibility (ARIA & Semantics)**:
-  - Implements semantic HTML5 layout tags: `<header>`, `<main>`, `<aside>`, `<section>`, `<nav>`.
-  - Accessible names are declared for all icon buttons, search boxes, and theme controls.
-  - Decorative elements and icons are explicitly hidden from screen readers using `aria-hidden="true"`.
-  - Form fields are explicitly connected to `<label>` tags.
+### Current Parser Coverage
 
----
+The parser registry also covers Arjo, American Diagnostic, Baxter, BioSonic, Cogentix, Covidien, Edan, Exergen, Hospira, Jiangmen Dacheng, Lab Corp/Drucker, LINET, Masimo, Mindray, Olympus, Philips, Stryker, Thermo Scientific, and Unico. For those manufacturers, the previous README links were removed from the serial-source table because they did not explicitly document serial-number date interpretation. Their parsers remain bounded by `metadata.py` founding and product-start years, and unresolved or invalid dates fall back to search/LLM consensus.
 
-## Setup & Installation
+| Manufacturer | Model(s) | Founded | Product start |
+|---|---|---:|---|
+| Arjo | FLOWTRON | 1957 | 1995 |
+| American Diagnostic (ADC) | CE 1434 | 1984 | 1984 |
+| Baxter Healthcare | SPECTRUM IQ | 1931 | 2017 |
+| BioSonic (Coltene) | UC95, UC95D15 | 1988 | 1995 |
+| Cogentix Medical | CST-4000, CST-5000 | 2015 | 2005 |
+| Covidien | RAPIDVAC | 2007 | 2008 |
+| Edan Instruments | ELITEV5, F9EXPRESS, IM3, IM50, IM70, SE1200EXPRESS, iT20 | 1995 | 2008-2016 |
+| Exergen | TAT5000 | 1980 | 2005 |
+| GE Healthcare | APEX PRO CH, Patient Data Module (PDM) | 1994 | 2001-2006 |
+| Hillrom / Hill-Rom | CENTURY, CENTURYP1400, P3200, P1440, PCENTURYK3256 | 1929 | 1990-2003 |
+| Hospira / ICU Medical | PLUMA+ | 2004 | 2004 |
+| Jiangmen Dacheng | IOB-507 | 2008 | 2010 |
+| Lab Corp / Drucker Diagnostics | 642E | 1978 | 1998 |
+| LINET | ELEGANZA 3, ELEGANZA 4 | 1990 | 2004-2012 |
+| Masimo | RAD8 | 1989 | 2005 |
+| Mindray | BENEVISION N15, EPM12MA | 1991 | 2015-2018 |
+| Olympus | CV190 | 1919 | 2012 |
+| Philips | INTELLIVUE MP20/MP30/MP50/MX40, MX500, M3002A | 1891 | 2004-2013 |
+| Stryker | 1061, 1115 | 1941 | 1995-2012 |
+| Thermo Scientific | SMARTVUE915 | 2006 | 2011 |
+| Unico | G380PL LED | 1991 | 2008 |
+| Welch Allyn | FILAC3000, SPOT VITAL SIGNS, SURETEMPPLUS | 1915 | 2000-2009 |
+| ZOLL Medical | AEDPLUS, M SERIES, RSERIES, R Series ALS/Plus, X Series, Propaq MD | 1980 | 1998-2012 |
+
+## WCAG 2.2 AA Compliance
+
+The dashboard targets WCAG 2.2 AA:
+
+- **Contrast**: Text, fields, and status badges meet 4.5:1 contrast; large text/icons meet 3:1.
+- **Keyboard access**: Upload zones, sortable table headers, fields, buttons, and pagination controls are keyboard-operable.
+- **Focus visibility**: Interactive elements use a high-contrast focus ring.
+- **Semantics and ARIA**: Layout uses `<header>`, `<main>`, `<aside>`, `<section>`, and `<nav>`; icon buttons and controls have accessible names; decorative icons are hidden from screen readers; labels are connected to inputs.
+
+## Setup
 
 ### Prerequisites
+
 - Python 3.10+
 - Node.js 18+
-- [uv](https://github.com/astral-sh/uv) (recommended Python package manager)
+- [uv](https://github.com/astral-sh/uv)
 
-### Installation Steps
+### Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd equiply-challenge
-   ```
+```bash
+git clone <repository_url>
+cd equiply-challenge
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+npm install
+```
 
-2. **Set up Python virtual environment and dependencies**:
-   ```bash
-   # Using uv (Recommended)
-   uv venv
-   source .venv/bin/activate
-   uv pip install -r requirements.txt
+Create `.env` in the repo root:
 
-   # Or using standard pip
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
-   ```
+```ini
+OPENAI_API_KEY=your-openai-api-key-here
+```
 
-3. **Install Frontend Dependencies**:
-   ```bash
-   npm install
-   ```
+Standard `pip` also works:
 
-4. **Environment Variables**:
-   Create a `.env` file in the root directory to store your OpenAI API Key (required for LLM fallback lookups):
-   ```ini
-   OPENAI_API_KEY=your-openai-api-key-here
-   ```
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
----
-
-## Usage Guide
+## Usage
 
 ### CLI Enrichment Engine
-
-To run the enrichment pipeline directly from the command line:
 
 ```bash
 uv run python3 enrich.py <input_csv_path> <output_csv_path>
 ```
 
-*Example*:
+Example:
+
 ```bash
 uv run python3 enrich.py challenge_data-v1.csv challenge_data_enriched.csv
 ```
 
-The output file will contain the cleaned records with the added `device_type` and `manufactured_date` columns, and reports will be saved locally as `formatting_corrections.txt` and `probable_typos.txt`.
+The output adds `device_type` and `manufactured_date`. Reports are written to `formatting_corrections.txt` and `probable_typos.txt`.
 
-### Local FastAPI & React Dashboard
+### Local FastAPI and React Dashboard
 
-The FastAPI server acts as both the API server and the host for the compiled React frontend.
+```bash
+npm run build
+uv run python3 server.py
+```
 
-1. **Build the React frontend static assets**:
-   ```bash
-   npm run build
-   ```
-   This generates the optimized, WCAG-compliant static assets inside the `dist/` directory.
+Open [http://localhost:8000](http://localhost:8000). The dashboard can upload equipment CSVs, show corrections, add manual overrides, display metrics, and download the enriched CSV.
 
-2. **Start the FastAPI server**:
-   ```bash
-   uv run python3 server.py
-   ```
-   The backend will start on `http://localhost:8000`.
+Frontend-only work can use Vite HMR:
 
-3. **Access the Dashboard**:
-   Open [http://localhost:8000](http://localhost:8000) in your web browser. You can now:
-   - Drag and drop your equipment CSV files.
-   - Monitor the auto-applied spelling and serial corrections.
-   - Add manual rule overrides.
-   - Inspect device metrics and download the enriched CSV.
+```bash
+npm run dev
+```
 
-*Note for frontend developers*: You can run the Vite dev server concurrently via `npm run dev` to enable Hot Module Replacement (HMR) during frontend-only editing. The frontend defaults to proxied backend calls at `http://localhost:8000`.
+The frontend defaults to backend calls at `http://localhost:8000`.
 
----
-
-## Testing Suite
-
-The project includes unit tests to verify the parsing logic for serial numbers. Run the test suite with:
+## Testing
 
 ```bash
 uv run python3 test_enrich_logic.py
 ```
 
----
+The tests cover parser logic, metadata validation, and manufacturer guessing.
 
 ## File Structure
 
-```
+```text
 equiply-challenge/
-├── enrichment/                    # Core Python pipeline package
-│   ├── __init__.py                # Package initializer
-│   ├── utils.py                   # Date normalization, caches, env, locks
-│   ├── parsers.py                 # 25+ local manufacturer date parsers
-│   ├── analyzer.py                # Levenshtein distance & prefix analyzer
-│   ├── llm.py                     # Web search and LLM consensus resolution
-│   └── pipeline.py                # Multi-pass CSV flow control & report writer
-├── src/                           # React frontend codebase
-│   ├── assets/                    # Graphic assets
-│   ├── App.css                    # Dashboard custom CSS rules
-│   ├── App.jsx                    # Main React application & dashboard layout
-│   ├── index.css                  # Theme colors, variables, & WCAG utilities
-│   └── main.jsx                   # React entry point
-├── dist/                          # Compiled production-ready React assets
-├── enrich.py                      # Facade layer & CLI utility entrypoint
-├── server.py                      # FastAPI production server
-├── test_enrich_logic.py           # Unit tests
-├── pyproject.toml                 # uv dependency configurations
-├── requirements.txt               # Frozen dependencies
-├── package.json                   # npm scripts and node dependencies
-├── .env                           # Local environment variables
-└── README.md                      # System documentation (this file)
+├── enrichment/
+│   ├── __init__.py
+│   ├── analyzer.py
+│   ├── llm.py
+│   ├── metadata.py
+│   ├── parsers.py
+│   ├── pipeline.py
+│   └── utils.py
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── dist/
+├── enrich.py
+├── server.py
+├── test_enrich_logic.py
+├── pyproject.toml
+├── requirements.txt
+├── package.json
+├── .env
+└── README.md
 ```
+
+## Future Improvements
+
+### Manufacturer Metadata
+
+`enrichment/metadata.py` is a static Python dictionary. It works for this dataset but is hard for non-engineers to audit and can drift when manufacturers change serial formats.
+
+**Recommendation**: Move metadata to `metadata.yaml` or SQLite with required fields for `founded_year`, `product_start_year`, and serial-specific sources. That would make updates reviewable as data changes.
+
+### Source Verification
+
+Sources are not checked at runtime, and manufacturer PDFs move over time.
+
+**Recommendation**: Add a weekly CI link checker for source URLs and keep local archived copies for critical serial guides.
+
+### LLM Date Risk
+
+LLM fallback can return plausible wrong dates, especially for niche manufacturers or weak search results.
+
+**Recommendation**: Show low-confidence date resolutions with a dashboard badge and allow user overrides with a logged reason.
+
+### Cache Invalidation
+
+JSON caches are indefinite. A corrected typo or similar new device may still reuse stale cached values.
+
+**Recommendation**: Store cache timestamps, add a 30-day TTL, and add a `--clear-cache` CLI flag.
+
+### Manufacturer Coverage
+
+The registry covers manufacturers in `challenge_data-v1.csv`; real hospital exports may include Draeger, Spacelabs, Datascope, more Mindray lines, Nihon Kohden, and others.
+
+**Recommendation**: Add `uv run python3 analyze_unknown.py` to scan an input CSV, identify unknown manufacturers, and output metadata stubs.
+
+### Week-to-Month Precision
+
+Several parsers approximate week-to-month conversion with `month = int(week * 7 / 30.4) + 1`, which can shift the month by one.
+
+**Recommendation**: Use `datetime.fromisocalendar(year, week, 1)` and derive the exact month.
+
+### User Feedback Loop
+
+The dashboard cannot currently flag an incorrect resolved date.
+
+**Recommendation**: Add a per-row "Report incorrect date" action that writes to `user_corrections.json`, then prefer those corrections on later runs.
